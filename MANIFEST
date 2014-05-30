@@ -1,0 +1,27 @@
+CHANGES
+lib/QBPOS/Schema.pm
+lib/QBPOS/Schema/Result/Company.pm
+lib/QBPOS/Schema/Result/Customer.pm
+lib/QBPOS/Schema/Result/Department.pm
+lib/QBPOS/Schema/Result/CustomField.pm
+lib/QBPOS/Schema/Result/Employee.pm
+lib/QBPOS/Schema/Result/InventoryCostAdjustment.pm
+lib/QBPOS/Schema/Result/InventoryCostAdjustmentItem.pm
+lib/QBPOS/Schema/Result/InventoryQtyAdjustment.pm
+lib/QBPOS/Schema/Result/InventoryQtyAdjustmentItem.pm
+lib/QBPOS/Schema/Result/ItemInventory.pm
+lib/QBPOS/Schema/Result/PurchaseOrder.pm
+lib/QBPOS/Schema/Result/PurchaseOrderItem.pm
+lib/QBPOS/Schema/Result/SalesOrder.pm
+lib/QBPOS/Schema/Result/SalesOrderItem.pm
+lib/QBPOS/Schema/Result/SalesReceipt.pm
+lib/QBPOS/Schema/Result/SalesReceiptItem.pm
+lib/QBPOS/Schema/Result/TransferSlip.pm
+lib/QBPOS/Schema/Result/TransferSlipItem.pm
+lib/QBPOS/Schema/Result/Vendor.pm
+lib/QBPOS/Schema/Result/Voucher.pm
+lib/QBPOS/Schema/Result/VoucherItem.pm
+Makefile.PL
+MANIFEST            This list of files
+MANIFEST.SKIP
+README
