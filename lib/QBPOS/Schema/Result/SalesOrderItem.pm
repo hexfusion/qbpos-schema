@@ -1,9 +1,6 @@
 use utf8;
 package QBPOS::Schema::Result::SalesOrderItem;
 
-# Created by DBIx::Class::Schema::Loader
-# DO NOT MODIFY THE FIRST PART OF THIS FILE
-
 =head1 NAME
 
 QBPOS::Schema::Result::SalesOrderItem

@@ -1,9 +1,6 @@
 use utf8;
 package QBPOS::Schema::Result::Vendor;
 
-# Created by DBIx::Class::Schema::Loader
-# DO NOT MODIFY THE FIRST PART OF THIS FILE
-
 =head1 NAME
 
 QBPOS::Schema::Result::Vendor - Vendors List Table
@@ -25,7 +22,7 @@ __PACKAGE__->table("Vendor");
 
 =head2 listid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 0
   size: [36,0]
 
@@ -43,37 +40,37 @@ __PACKAGE__->table("Vendor");
 
 =head2 accountnumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [99,0]
 
 =head2 city
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [31,0]
 
 =head2 companyname
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
 =head2 country
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [31,0]
 
 =head2 email
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [99,0]
 
 =head2 firstname
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
@@ -85,73 +82,73 @@ __PACKAGE__->table("Vendor");
 
 =head2 lastname
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
 =head2 notes
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [245,0]
 
 =head2 phone
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [21,0]
 
 =head2 phone2
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [21,0]
 
 =head2 phone3
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [21,0]
 
 =head2 phone4
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [21,0]
 
 =head2 postalcode
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [13,0]
 
 =head2 salutation
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [15,0]
 
 =head2 state
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [21,0]
 
 =head2 storeexchangestatus
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [12,0]
 
 =head2 street
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [41,0]
 
 =head2 terms
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [200,0]
 
@@ -175,13 +172,13 @@ __PACKAGE__->table("Vendor");
 
 =head2 vendorcode
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [3,0]
 
 =head2 customfieldother
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
@@ -189,49 +186,49 @@ __PACKAGE__->table("Vendor");
 
 __PACKAGE__->add_columns(
   "listid",
-  { data_type => -8, is_nullable => 0, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 0, size => [36, 0] },
   "timecreated",
   { data_type => "timestamp", is_nullable => 1, size => [23, 3] },
   "timemodified",
   { data_type => "timestamp", is_nullable => 1, size => [23, 3] },
   "accountnumber",
-  { data_type => -8, is_nullable => 1, size => [99, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [99, 0] },
   "city",
-  { data_type => -8, is_nullable => 1, size => [31, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [31, 0] },
   "companyname",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "country",
-  { data_type => -8, is_nullable => 1, size => [31, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [31, 0] },
   "email",
-  { data_type => -8, is_nullable => 1, size => [99, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [99, 0] },
   "firstname",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
   "isinactive",
   { data_type => "bit", is_nullable => 1, size => [1, 0] },
   "lastname",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
   "notes",
-  { data_type => -8, is_nullable => 1, size => [245, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [245, 0] },
   "phone",
-  { data_type => -8, is_nullable => 1, size => [21, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [21, 0] },
   "phone2",
-  { data_type => -8, is_nullable => 1, size => [21, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [21, 0] },
   "phone3",
-  { data_type => -8, is_nullable => 1, size => [21, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [21, 0] },
   "phone4",
-  { data_type => -8, is_nullable => 1, size => [21, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [21, 0] },
   "postalcode",
-  { data_type => -8, is_nullable => 1, size => [13, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [13, 0] },
   "salutation",
-  { data_type => -8, is_nullable => 1, size => [15, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [15, 0] },
   "state",
-  { data_type => -8, is_nullable => 1, size => [21, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [21, 0] },
   "storeexchangestatus",
-  { data_type => -8, is_nullable => 1, size => [12, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [12, 0] },
   "street",
-  { data_type => -8, is_nullable => 1, size => [41, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [41, 0] },
   "terms",
-  { data_type => -8, is_nullable => 1, size => [200, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [200, 0] },
   "termsdiscount",
   { data_type => "decimal", is_nullable => 1, size => [11, 2] },
   "termsdiscountdays",
@@ -239,15 +236,10 @@ __PACKAGE__->add_columns(
   "termsnetdays",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "vendorcode",
-  { data_type => -8, is_nullable => 1, size => [3, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [3, 0] },
   "customfieldother",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07040 @ 2014-05-29 21:36:15
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:CKSN6yczpqOUoCgYrJxXrQ
-
-
-# You can replace this text with custom code or comments, and it will be preserved on regeneration
 1;

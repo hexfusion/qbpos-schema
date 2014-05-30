@@ -1,9 +1,6 @@
 use utf8;
 package QBPOS::Schema::Result::TransferSlipItem;
 
-# Created by DBIx::Class::Schema::Loader
-# DO NOT MODIFY THE FIRST PART OF THIS FILE
-
 =head1 NAME
 
 QBPOS::Schema::Result::TransferSlipItem - Provides line item detail for a transfer slip
@@ -25,7 +22,7 @@ __PACKAGE__->table("TransferSlipItem");
 
 =head2 txnid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [36,0]
 
@@ -43,19 +40,19 @@ __PACKAGE__->table("TransferSlipItem");
 
 =head2 associate
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
 =head2 carrier
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [15,0]
 
 =head2 comments
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [300,0]
 
@@ -73,13 +70,13 @@ __PACKAGE__->table("TransferSlipItem");
 
 =head2 historydocstatus
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [9,0]
 
 =head2 quickbooksflag
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [17,0]
 
@@ -103,7 +100,7 @@ __PACKAGE__->table("TransferSlipItem");
 
 =head2 storeexchangestatus
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [12,0]
 
@@ -133,7 +130,7 @@ __PACKAGE__->table("TransferSlipItem");
 
 =head2 txnstate
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [6,0]
 
@@ -151,7 +148,7 @@ __PACKAGE__->table("TransferSlipItem");
 
 =head2 transferslipitemlistid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 0
   size: [36,0]
 
@@ -163,7 +160,7 @@ __PACKAGE__->table("TransferSlipItem");
 
 =head2 transferslipitemserialnumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [25,0]
 
@@ -175,7 +172,7 @@ __PACKAGE__->table("TransferSlipItem");
 
 =head2 fqprimarykey
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 0
   size: [110,0]
 
@@ -183,25 +180,25 @@ __PACKAGE__->table("TransferSlipItem");
 
 __PACKAGE__->add_columns(
   "txnid",
-  { data_type => -8, is_nullable => 1, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [36, 0] },
   "timecreated",
   { data_type => "timestamp", is_nullable => 1, size => [23, 3] },
   "timemodified",
   { data_type => "timestamp", is_nullable => 1, size => [23, 3] },
   "associate",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "carrier",
-  { data_type => -8, is_nullable => 1, size => [15, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [15, 0] },
   "comments",
-  { data_type => -8, is_nullable => 1, size => [300, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [300, 0] },
   "freight",
   { data_type => "decimal", is_nullable => 1, size => [11, 2] },
   "fromstorenumber",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "historydocstatus",
-  { data_type => -8, is_nullable => 1, size => [9, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [9, 0] },
   "quickbooksflag",
-  { data_type => -8, is_nullable => 1, size => [17, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [17, 0] },
   "itemscount",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "slipeta",
@@ -209,7 +206,7 @@ __PACKAGE__->add_columns(
   "slipnumber",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "storeexchangestatus",
-  { data_type => -8, is_nullable => 1, size => [12, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [12, 0] },
   "tostorenumber",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "totalcost",
@@ -219,27 +216,22 @@ __PACKAGE__->add_columns(
   "txndate",
   { data_type => "date", is_nullable => 1, size => [10, 0] },
   "txnstate",
-  { data_type => -8, is_nullable => 1, size => [6, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [6, 0] },
   "workstation",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "transferslipitemseqno",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "transferslipitemlistid",
-  { data_type => -8, is_nullable => 0, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 0, size => [36, 0] },
   "transferslipitemqty",
   { data_type => "decimal", is_nullable => 1, size => [13, 5] },
   "transferslipitemserialnumber",
-  { data_type => -8, is_nullable => 1, size => [25, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [25, 0] },
   "fqsavetocache",
   { data_type => "bit", is_nullable => 1, size => [1, 0] },
   "fqprimarykey",
-  { data_type => -8, is_nullable => 0, size => [110, 0] },
+  { data_type => "varchar", is_nullable => 0, size => [110, 0] },
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07040 @ 2014-05-29 21:36:15
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:+edz8CZeSuuitGNeS1srEQ
-
-
-# You can replace this text with custom code or comments, and it will be preserved on regeneration
 1;

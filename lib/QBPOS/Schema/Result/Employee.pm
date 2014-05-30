@@ -1,9 +1,6 @@
 use utf8;
 package QBPOS::Schema::Result::Employee;
 
-# Created by DBIx::Class::Schema::Loader
-# DO NOT MODIFY THE FIRST PART OF THIS FILE
-
 =head1 NAME
 
 QBPOS::Schema::Result::Employee - Employee List Table
@@ -25,7 +22,7 @@ __PACKAGE__->table("Employee");
 
 =head2 listid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 0
   size: [36,0]
 
@@ -43,7 +40,7 @@ __PACKAGE__->table("Employee");
 
 =head2 city
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [31,0]
 
@@ -55,85 +52,85 @@ __PACKAGE__->table("Employee");
 
 =head2 country
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [31,0]
 
 =head2 email
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [99,0]
 
 =head2 firstname
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
 =head2 lastname
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
 =head2 loginname
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 0
   size: [20,0]
 
 =head2 notes
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [245,0]
 
 =head2 phone
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
 =head2 phone2
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
 =head2 phone3
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
 =head2 phone4
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
 =head2 postalcode
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [13,0]
 
 =head2 state
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [21,0]
 
 =head2 street
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [41,0]
 
 =head2 customfieldother
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
@@ -141,49 +138,44 @@ __PACKAGE__->table("Employee");
 
 __PACKAGE__->add_columns(
   "listid",
-  { data_type => -8, is_nullable => 0, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 0, size => [36, 0] },
   "timecreated",
   { data_type => "timestamp", is_nullable => 1, size => [23, 3] },
   "timemodified",
   { data_type => "timestamp", is_nullable => 1, size => [23, 3] },
   "city",
-  { data_type => -8, is_nullable => 1, size => [31, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [31, 0] },
   "commissionpercent",
   { data_type => "decimal", is_nullable => 1, size => [13, 5] },
   "country",
-  { data_type => -8, is_nullable => 1, size => [31, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [31, 0] },
   "email",
-  { data_type => -8, is_nullable => 1, size => [99, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [99, 0] },
   "firstname",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
   "lastname",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
   "loginname",
-  { data_type => -8, is_nullable => 0, size => [20, 0] },
+  { data_type => "varchar", is_nullable => 0, size => [20, 0] },
   "notes",
-  { data_type => -8, is_nullable => 1, size => [245, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [245, 0] },
   "phone",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "phone2",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "phone3",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "phone4",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "postalcode",
-  { data_type => -8, is_nullable => 1, size => [13, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [13, 0] },
   "state",
-  { data_type => -8, is_nullable => 1, size => [21, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [21, 0] },
   "street",
-  { data_type => -8, is_nullable => 1, size => [41, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [41, 0] },
   "customfieldother",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07040 @ 2014-05-29 21:36:11
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:OeNLlcUccATgeOdUoOloxQ
-
-
-# You can replace this text with custom code or comments, and it will be preserved on regeneration
 1;

@@ -1,9 +1,6 @@
 use utf8;
 package QBPOS::Schema::Result::SalesReceiptItem;
 
-# Created by DBIx::Class::Schema::Loader
-# DO NOT MODIFY THE FIRST PART OF THIS FILE
-
 =head1 NAME
 
 QBPOS::Schema::Result::SalesReceiptItem
@@ -29,7 +26,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 txnid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [36,0]
 
@@ -47,25 +44,25 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 associate
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
 =head2 cashier
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
 =head2 comments
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [300,0]
 
 =head2 customerlistid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [36,0]
 
@@ -83,7 +80,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 historydocstatus
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [9,0]
 
@@ -95,25 +92,25 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 pricelevelnumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [1,0]
 
 =head2 promocode
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [10,0]
 
 =head2 quickbooksflag
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [17,0]
 
 =head2 salesordertxnid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [36,0]
 
@@ -125,7 +122,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 salesreceipttype
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [7,0]
 
@@ -137,7 +134,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 storeexchangestatus
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [12,0]
 
@@ -161,7 +158,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 taxcategory
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [20,0]
 
@@ -173,7 +170,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendertype
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [10,0]
 
@@ -185,7 +182,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 trackingnumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [50,0]
 
@@ -197,7 +194,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 txnstate
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [6,0]
 
@@ -209,139 +206,139 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 billinginformationcity
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [31,0]
 
 =head2 billinginformationcompanyname
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [25,0]
 
 =head2 billinginformationcountry
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
 =head2 billinginformationfirstname
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
 =head2 billinginformationlastname
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
 =head2 billinginformationphone
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
 =head2 billinginformationphone2
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
 =head2 billinginformationphone3
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
 =head2 billinginformationphone4
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
 =head2 billinginformationpostalcode
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [10,0]
 
 =head2 billinginformationsalutation
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [15,0]
 
 =head2 billinginformationstate
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [21,0]
 
 =head2 billinginformationstreet
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [41,0]
 
 =head2 shippinginformationcity
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [31,0]
 
 =head2 shippinginformationcompanyname
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [25,0]
 
 =head2 shippinginformationcountry
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
 =head2 shippinginformationfullname
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [159,0]
 
 =head2 shippinginformationphone
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [15,0]
 
 =head2 shippinginformationphone2
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [15,0]
 
 =head2 shippinginformationphone3
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [15,0]
 
 =head2 shippinginformationphone4
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [15,0]
 
 =head2 shippinginformationpostalcode
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [10,0]
 
 =head2 shippinginformationshipby
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [50,0]
 
@@ -353,13 +350,13 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 shippinginformationstate
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [21,0]
 
 =head2 shippinginformationstreet
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [41,0]
 
@@ -371,25 +368,25 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 salesreceiptitemlistid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [36,0]
 
 =head2 salesreceiptitemalu
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [20,0]
 
 =head2 salesreceiptitemassociate
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
 =head2 salesreceiptitemattribute
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [8,0]
 
@@ -401,13 +398,13 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 salesreceiptitemdesc1
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
 =head2 salesreceiptitemdesc2
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
@@ -425,7 +422,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 salesreceiptitemdiscounttype
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [16,0]
 
@@ -455,13 +452,13 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 salesreceiptitemserialnumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [25,0]
 
 =head2 salesreceiptitemsize
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [8,0]
 
@@ -473,19 +470,19 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 salesreceiptitemtaxcode
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [100,0]
 
 =head2 salesreceiptitemupc
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [18,0]
 
 =head2 tendercheck01checknumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -497,7 +494,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendercheck02checknumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -509,7 +506,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendercheck03checknumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -521,7 +518,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendercheck04checknumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -533,7 +530,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendercheck05checknumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -545,7 +542,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendercheck06checknumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -557,7 +554,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendercheck07checknumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -569,7 +566,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendercheck08checknumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -581,7 +578,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendercheck09checknumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -593,7 +590,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendercheck10checknumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -791,7 +788,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendergift01giftcertificatenumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -803,7 +800,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendergift02giftcertificatenumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -815,7 +812,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendergift03giftcertificatenumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -827,7 +824,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendergift04giftcertificatenumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -839,7 +836,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendergift05giftcertificatenumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -851,7 +848,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendergift06giftcertificatenumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -863,7 +860,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendergift07giftcertificatenumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -875,7 +872,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendergift08giftcertificatenumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -887,7 +884,7 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendergift09giftcertificatenumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
@@ -899,13 +896,13 @@ __PACKAGE__->table("SalesReceiptItem");
 
 =head2 tendergift10giftcertificatenumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [32,0]
 
 =head2 fqprimarykey
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 0
   size: [110,0]
 
@@ -913,43 +910,43 @@ __PACKAGE__->table("SalesReceiptItem");
 
 __PACKAGE__->add_columns(
   "txnid",
-  { data_type => -8, is_nullable => 1, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [36, 0] },
   "timecreated",
   { data_type => "timestamp", is_nullable => 1, size => [23, 3] },
   "timemodified",
   { data_type => "timestamp", is_nullable => 1, size => [23, 3] },
   "associate",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "cashier",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "comments",
-  { data_type => -8, is_nullable => 1, size => [300, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [300, 0] },
   "customerlistid",
-  { data_type => -8, is_nullable => 1, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [36, 0] },
   "discount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "discountpercent",
   { data_type => "decimal", is_nullable => 1, size => [11, 2] },
   "historydocstatus",
-  { data_type => -8, is_nullable => 1, size => [9, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [9, 0] },
   "itemscount",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "pricelevelnumber",
-  { data_type => -8, is_nullable => 1, size => [1, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [1, 0] },
   "promocode",
-  { data_type => -8, is_nullable => 1, size => [10, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [10, 0] },
   "quickbooksflag",
-  { data_type => -8, is_nullable => 1, size => [17, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [17, 0] },
   "salesordertxnid",
-  { data_type => -8, is_nullable => 1, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [36, 0] },
   "salesreceiptnumber",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "salesreceipttype",
-  { data_type => -8, is_nullable => 1, size => [7, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [7, 0] },
   "shipdate",
   { data_type => "date", is_nullable => 1, size => [10, 0] },
   "storeexchangestatus",
-  { data_type => -8, is_nullable => 1, size => [12, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [12, 0] },
   "storenumber",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "subtotal",
@@ -957,95 +954,95 @@ __PACKAGE__->add_columns(
   "taxamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "taxcategory",
-  { data_type => -8, is_nullable => 1, size => [20, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [20, 0] },
   "taxpercentage",
   { data_type => "decimal", is_nullable => 1, size => [11, 2] },
   "tendertype",
-  { data_type => -8, is_nullable => 1, size => [10, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [10, 0] },
   "total",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "trackingnumber",
-  { data_type => -8, is_nullable => 1, size => [50, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [50, 0] },
   "txndate",
   { data_type => "date", is_nullable => 1, size => [10, 0] },
   "txnstate",
-  { data_type => -8, is_nullable => 1, size => [6, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [6, 0] },
   "workstation",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "billinginformationcity",
-  { data_type => -8, is_nullable => 1, size => [31, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [31, 0] },
   "billinginformationcompanyname",
-  { data_type => -8, is_nullable => 1, size => [25, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [25, 0] },
   "billinginformationcountry",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "billinginformationfirstname",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
   "billinginformationlastname",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
   "billinginformationphone",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "billinginformationphone2",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "billinginformationphone3",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "billinginformationphone4",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "billinginformationpostalcode",
-  { data_type => -8, is_nullable => 1, size => [10, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [10, 0] },
   "billinginformationsalutation",
-  { data_type => -8, is_nullable => 1, size => [15, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [15, 0] },
   "billinginformationstate",
-  { data_type => -8, is_nullable => 1, size => [21, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [21, 0] },
   "billinginformationstreet",
-  { data_type => -8, is_nullable => 1, size => [41, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [41, 0] },
   "shippinginformationcity",
-  { data_type => -8, is_nullable => 1, size => [31, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [31, 0] },
   "shippinginformationcompanyname",
-  { data_type => -8, is_nullable => 1, size => [25, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [25, 0] },
   "shippinginformationcountry",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "shippinginformationfullname",
-  { data_type => -8, is_nullable => 1, size => [159, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [159, 0] },
   "shippinginformationphone",
-  { data_type => -8, is_nullable => 1, size => [15, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [15, 0] },
   "shippinginformationphone2",
-  { data_type => -8, is_nullable => 1, size => [15, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [15, 0] },
   "shippinginformationphone3",
-  { data_type => -8, is_nullable => 1, size => [15, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [15, 0] },
   "shippinginformationphone4",
-  { data_type => -8, is_nullable => 1, size => [15, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [15, 0] },
   "shippinginformationpostalcode",
-  { data_type => -8, is_nullable => 1, size => [10, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [10, 0] },
   "shippinginformationshipby",
-  { data_type => -8, is_nullable => 1, size => [50, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [50, 0] },
   "shippinginformationshipping",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "shippinginformationstate",
-  { data_type => -8, is_nullable => 1, size => [21, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [21, 0] },
   "shippinginformationstreet",
-  { data_type => -8, is_nullable => 1, size => [41, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [41, 0] },
   "salesreceiptitemseqno",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "salesreceiptitemlistid",
-  { data_type => -8, is_nullable => 1, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [36, 0] },
   "salesreceiptitemalu",
-  { data_type => -8, is_nullable => 1, size => [20, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [20, 0] },
   "salesreceiptitemassociate",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "salesreceiptitemattribute",
-  { data_type => -8, is_nullable => 1, size => [8, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [8, 0] },
   "salesreceiptitemcommission",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "salesreceiptitemdesc1",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
   "salesreceiptitemdesc2",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
   "salesreceiptitemdiscount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "salesreceiptitemdiscountpercentage",
   { data_type => "decimal", is_nullable => 1, size => [11, 2] },
   "salesreceiptitemdiscounttype",
-  { data_type => -8, is_nullable => 1, size => [16, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [16, 0] },
   "salesreceiptitemextendedprice",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "salesreceiptitemextendedtax",
@@ -1055,53 +1052,53 @@ __PACKAGE__->add_columns(
   "salesreceiptitemqty",
   { data_type => "decimal", is_nullable => 1, size => [13, 5] },
   "salesreceiptitemserialnumber",
-  { data_type => -8, is_nullable => 1, size => [25, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [25, 0] },
   "salesreceiptitemsize",
-  { data_type => -8, is_nullable => 1, size => [8, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [8, 0] },
   "salesreceiptitemtaxamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "salesreceiptitemtaxcode",
-  { data_type => -8, is_nullable => 1, size => [100, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [100, 0] },
   "salesreceiptitemupc",
-  { data_type => -8, is_nullable => 1, size => [18, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [18, 0] },
   "tendercheck01checknumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendercheck01tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendercheck02checknumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendercheck02tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendercheck03checknumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendercheck03tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendercheck04checknumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendercheck04tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendercheck05checknumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendercheck05tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendercheck06checknumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendercheck06tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendercheck07checknumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendercheck07tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendercheck08checknumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendercheck08tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendercheck09checknumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendercheck09tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendercheck10checknumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendercheck10tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendercash01tenderamount",
@@ -1167,51 +1164,46 @@ __PACKAGE__->add_columns(
   "tendergift01tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendergift01giftcertificatenumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendergift02tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendergift02giftcertificatenumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendergift03tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendergift03giftcertificatenumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendergift04tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendergift04giftcertificatenumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendergift05tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendergift05giftcertificatenumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendergift06tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendergift06giftcertificatenumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendergift07tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendergift07giftcertificatenumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendergift08tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendergift08giftcertificatenumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendergift09tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendergift09giftcertificatenumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "tendergift10tenderamount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "tendergift10giftcertificatenumber",
-  { data_type => -8, is_nullable => 1, size => [32, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [32, 0] },
   "fqprimarykey",
-  { data_type => -8, is_nullable => 0, size => [110, 0] },
+  { data_type => "varchar", is_nullable => 0, size => [110, 0] },
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07040 @ 2014-05-29 21:36:14
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:SX70JBNNeINNCp33KRraEg
-
-
-# You can replace this text with custom code or comments, and it will be preserved on regeneration
 1;

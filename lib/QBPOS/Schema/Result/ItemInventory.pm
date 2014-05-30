@@ -1,9 +1,6 @@
 use utf8;
 package QBPOS::Schema::Result::ItemInventory;
 
-# Created by DBIx::Class::Schema::Loader
-# DO NOT MODIFY THE FIRST PART OF THIS FILE
-
 =head1 NAME
 
 QBPOS::Schema::Result::ItemInventory - Inventory Items List Table
@@ -25,7 +22,7 @@ __PACKAGE__->table("ItemInventory");
 
 =head2 listid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 0
   size: [36,0]
 
@@ -43,19 +40,19 @@ __PACKAGE__->table("ItemInventory");
 
 =head2 alu
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [20,0]
 
 =head2 attribute
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [8,0]
 
 =head2 cogsaccount
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [159,0]
 
@@ -67,31 +64,31 @@ __PACKAGE__->table("ItemInventory");
 
 =head2 departmentcode
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [3,0]
 
 =head2 departmentlistid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [36,0]
 
 =head2 desc1
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
 =head2 desc2
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
 =head2 incomeaccount
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [159,0]
 
@@ -127,7 +124,7 @@ __PACKAGE__->table("ItemInventory");
 
 =head2 itemtype
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [13,0]
 
@@ -271,55 +268,55 @@ __PACKAGE__->table("ItemInventory");
 
 =head2 serialflag
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [8,0]
 
 =head2 size
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [8,0]
 
 =head2 storeexchangestatus
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [12,0]
 
 =head2 taxcode
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [36,0]
 
 =head2 unitofmeasure
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [20,0]
 
 =head2 upc
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [18,0]
 
 =head2 vendorcode
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [3,0]
 
 =head2 vendorlistid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [36,0]
 
 =head2 vendorinfo2alu
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [20,0]
 
@@ -331,19 +328,19 @@ __PACKAGE__->table("ItemInventory");
 
 =head2 vendorinfo2upc
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [18,0]
 
 =head2 vendorinfo2vendorlistid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [36,0]
 
 =head2 vendorinfo3alu
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [20,0]
 
@@ -355,19 +352,19 @@ __PACKAGE__->table("ItemInventory");
 
 =head2 vendorinfo3upc
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [18,0]
 
 =head2 vendorinfo3vendorlistid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [36,0]
 
 =head2 vendorinfo4alu
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [20,0]
 
@@ -379,19 +376,19 @@ __PACKAGE__->table("ItemInventory");
 
 =head2 vendorinfo4upc
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [18,0]
 
 =head2 vendorinfo4vendorlistid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [36,0]
 
 =head2 vendorinfo5alu
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [20,0]
 
@@ -403,43 +400,43 @@ __PACKAGE__->table("ItemInventory");
 
 =head2 vendorinfo5upc
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [18,0]
 
 =head2 vendorinfo5vendorlistid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [36,0]
 
 =head2 customfieldcode
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
 =head2 customfieldlife_cycle_code
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
 =head2 customfieldmanf_sku
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
 =head2 customfieldrelease_season
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
 =head2 customfieldsku
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
@@ -447,29 +444,29 @@ __PACKAGE__->table("ItemInventory");
 
 __PACKAGE__->add_columns(
   "listid",
-  { data_type => -8, is_nullable => 0, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 0, size => [36, 0] },
   "timecreated",
   { data_type => "timestamp", is_nullable => 1, size => [23, 3] },
   "timemodified",
   { data_type => "timestamp", is_nullable => 1, size => [23, 3] },
   "alu",
-  { data_type => -8, is_nullable => 1, size => [20, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [20, 0] },
   "attribute",
-  { data_type => -8, is_nullable => 1, size => [8, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [8, 0] },
   "cogsaccount",
-  { data_type => -8, is_nullable => 1, size => [159, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [159, 0] },
   "cost",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "departmentcode",
-  { data_type => -8, is_nullable => 1, size => [3, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [3, 0] },
   "departmentlistid",
-  { data_type => -8, is_nullable => 1, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [36, 0] },
   "desc1",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
   "desc2",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
   "incomeaccount",
-  { data_type => -8, is_nullable => 1, size => [159, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [159, 0] },
   "isbelowreorder",
   { data_type => "bit", is_nullable => 1, size => [1, 0] },
   "iseligibleforcommission",
@@ -481,7 +478,7 @@ __PACKAGE__->add_columns(
   "itemnumber",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "itemtype",
-  { data_type => -8, is_nullable => 1, size => [13, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [13, 0] },
   "lastreceived",
   { data_type => "date", is_nullable => 1, size => [10, 0] },
   "marginpercent",
@@ -529,69 +526,64 @@ __PACKAGE__->add_columns(
   "reorderpoint",
   { data_type => "decimal", is_nullable => 1, size => [13, 5] },
   "serialflag",
-  { data_type => -8, is_nullable => 1, size => [8, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [8, 0] },
   "size",
-  { data_type => -8, is_nullable => 1, size => [8, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [8, 0] },
   "storeexchangestatus",
-  { data_type => -8, is_nullable => 1, size => [12, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [12, 0] },
   "taxcode",
-  { data_type => -8, is_nullable => 1, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [36, 0] },
   "unitofmeasure",
-  { data_type => -8, is_nullable => 1, size => [20, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [20, 0] },
   "upc",
-  { data_type => -8, is_nullable => 1, size => [18, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [18, 0] },
   "vendorcode",
-  { data_type => -8, is_nullable => 1, size => [3, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [3, 0] },
   "vendorlistid",
-  { data_type => -8, is_nullable => 1, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [36, 0] },
   "vendorinfo2alu",
-  { data_type => -8, is_nullable => 1, size => [20, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [20, 0] },
   "vendorinfo2ordercost",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "vendorinfo2upc",
-  { data_type => -8, is_nullable => 1, size => [18, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [18, 0] },
   "vendorinfo2vendorlistid",
-  { data_type => -8, is_nullable => 1, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [36, 0] },
   "vendorinfo3alu",
-  { data_type => -8, is_nullable => 1, size => [20, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [20, 0] },
   "vendorinfo3ordercost",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "vendorinfo3upc",
-  { data_type => -8, is_nullable => 1, size => [18, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [18, 0] },
   "vendorinfo3vendorlistid",
-  { data_type => -8, is_nullable => 1, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [36, 0] },
   "vendorinfo4alu",
-  { data_type => -8, is_nullable => 1, size => [20, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [20, 0] },
   "vendorinfo4ordercost",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "vendorinfo4upc",
-  { data_type => -8, is_nullable => 1, size => [18, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [18, 0] },
   "vendorinfo4vendorlistid",
-  { data_type => -8, is_nullable => 1, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [36, 0] },
   "vendorinfo5alu",
-  { data_type => -8, is_nullable => 1, size => [20, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [20, 0] },
   "vendorinfo5ordercost",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "vendorinfo5upc",
-  { data_type => -8, is_nullable => 1, size => [18, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [18, 0] },
   "vendorinfo5vendorlistid",
-  { data_type => -8, is_nullable => 1, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [36, 0] },
   "customfieldcode",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
   "customfieldlife_cycle_code",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
   "customfieldmanf_sku",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
   "customfieldrelease_season",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
   "customfieldsku",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07040 @ 2014-05-29 21:36:12
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:NpGQJ8xIYrlxoLt50RD7DA
-
-
-# You can replace this text with custom code or comments, and it will be preserved on regeneration
 1;

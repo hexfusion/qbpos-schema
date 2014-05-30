@@ -1,9 +1,6 @@
 use utf8;
 package QBPOS::Schema::Result::InventoryQtyAdjustmentItem;
 
-# Created by DBIx::Class::Schema::Loader
-# DO NOT MODIFY THE FIRST PART OF THIS FILE
-
 =head1 NAME
 
 QBPOS::Schema::Result::InventoryQtyAdjustmentItem - Insert Only Inventory Qty Adjustment Item Table
@@ -25,7 +22,7 @@ __PACKAGE__->table("InventoryQtyAdjustmentItem");
 
 =head2 txnid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [36,0]
 
@@ -43,13 +40,13 @@ __PACKAGE__->table("InventoryQtyAdjustmentItem");
 
 =head2 associate
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
 =head2 comments
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [300,0]
 
@@ -61,7 +58,7 @@ __PACKAGE__->table("InventoryQtyAdjustmentItem");
 
 =head2 historydocstatus
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [9,0]
 
@@ -73,7 +70,7 @@ __PACKAGE__->table("InventoryQtyAdjustmentItem");
 
 =head2 inventoryadjustmentsource
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [17,0]
 
@@ -97,19 +94,19 @@ __PACKAGE__->table("InventoryQtyAdjustmentItem");
 
 =head2 quickbooksflag
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [17,0]
 
 =head2 reason
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [8,0]
 
 =head2 storeexchangestatus
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [17,0]
 
@@ -127,7 +124,7 @@ __PACKAGE__->table("InventoryQtyAdjustmentItem");
 
 =head2 txnstate
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [6,0]
 
@@ -145,7 +142,7 @@ __PACKAGE__->table("InventoryQtyAdjustmentItem");
 
 =head2 inventoryqtyadjustmentitemlistid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [36,0]
 
@@ -169,7 +166,7 @@ __PACKAGE__->table("InventoryQtyAdjustmentItem");
 
 =head2 inventoryqtyadjustmentitemserialnumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [25,0]
 
@@ -181,7 +178,7 @@ __PACKAGE__->table("InventoryQtyAdjustmentItem");
 
 =head2 fqprimarykey
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 0
   size: [110,0]
 
@@ -189,23 +186,23 @@ __PACKAGE__->table("InventoryQtyAdjustmentItem");
 
 __PACKAGE__->add_columns(
   "txnid",
-  { data_type => -8, is_nullable => 1, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [36, 0] },
   "timecreated",
   { data_type => "timestamp", is_nullable => 1, size => [23, 3] },
   "timemodified",
   { data_type => "timestamp", is_nullable => 1, size => [23, 3] },
   "associate",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "comments",
-  { data_type => -8, is_nullable => 1, size => [300, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [300, 0] },
   "costdifference",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "historydocstatus",
-  { data_type => -8, is_nullable => 1, size => [9, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [9, 0] },
   "inventoryadjustmentnumber",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "inventoryadjustmentsource",
-  { data_type => -8, is_nullable => 1, size => [17, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [17, 0] },
   "itemscount",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "newquantity",
@@ -213,23 +210,23 @@ __PACKAGE__->add_columns(
   "oldquantity",
   { data_type => "decimal", is_nullable => 1, size => [13, 5] },
   "quickbooksflag",
-  { data_type => -8, is_nullable => 1, size => [17, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [17, 0] },
   "reason",
-  { data_type => -8, is_nullable => 1, size => [8, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [8, 0] },
   "storeexchangestatus",
-  { data_type => -8, is_nullable => 1, size => [17, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [17, 0] },
   "storenumber",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "txndate",
   { data_type => "date", is_nullable => 1, size => [10, 0] },
   "txnstate",
-  { data_type => -8, is_nullable => 1, size => [6, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [6, 0] },
   "workstation",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "inventoryqtyadjustmentitemseqno",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "inventoryqtyadjustmentitemlistid",
-  { data_type => -8, is_nullable => 1, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [36, 0] },
   "inventoryqtyadjustmentitemnewquantity",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "inventoryqtyadjustmentitemoldquantity",
@@ -237,17 +234,12 @@ __PACKAGE__->add_columns(
   "inventoryqtyadjustmentitemqtydifference",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "inventoryqtyadjustmentitemserialnumber",
-  { data_type => -8, is_nullable => 1, size => [25, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [25, 0] },
   "fqsavetocache",
   { data_type => "bit", is_nullable => 1, size => [1, 0] },
   "fqprimarykey",
-  { data_type => -8, is_nullable => 0, size => [110, 0] },
+  { data_type => "varchar", is_nullable => 0, size => [110, 0] },
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07040 @ 2014-05-29 21:36:12
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:LDIJFMBpHlPaje2ppOdFMw
-
-
-# You can replace this text with custom code or comments, and it will be preserved on regeneration
 1;

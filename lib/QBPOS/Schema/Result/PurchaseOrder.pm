@@ -1,9 +1,6 @@
 use utf8;
 package QBPOS::Schema::Result::PurchaseOrder;
 
-# Created by DBIx::Class::Schema::Loader
-# DO NOT MODIFY THE FIRST PART OF THIS FILE
-
 =head1 NAME
 
 QBPOS::Schema::Result::PurchaseOrder - Main Purchase Order Table
@@ -25,7 +22,7 @@ __PACKAGE__->table("PurchaseOrder");
 
 =head2 txnid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 0
   size: [36,0]
 
@@ -43,7 +40,7 @@ __PACKAGE__->table("PurchaseOrder");
 
 =head2 associate
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
@@ -55,7 +52,7 @@ __PACKAGE__->table("PurchaseOrder");
 
 =head2 companyname
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [40,0]
 
@@ -79,7 +76,7 @@ __PACKAGE__->table("PurchaseOrder");
 
 =head2 instructions
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [2000,0]
 
@@ -91,13 +88,13 @@ __PACKAGE__->table("PurchaseOrder");
 
 =head2 purchaseordernumber
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [20,0]
 
 =head2 purchaseorderstatusdesc
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [200,0]
 
@@ -133,7 +130,7 @@ __PACKAGE__->table("PurchaseOrder");
 
 =head2 storeexchangestatus
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [12,0]
 
@@ -151,7 +148,7 @@ __PACKAGE__->table("PurchaseOrder");
 
 =head2 terms
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [200,0]
 
@@ -193,13 +190,13 @@ __PACKAGE__->table("PurchaseOrder");
 
 =head2 vendorcode
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [3,0]
 
 =head2 vendorlistid
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 0
   size: [36,0]
 
@@ -211,13 +208,13 @@ __PACKAGE__->table("PurchaseOrder");
 
 =head2 customfieldother1
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
 =head2 customfieldother2
 
-  data_type: -8
+  data_type: 'varchar'
   is_nullable: 1
   size: [30,0]
 
@@ -225,17 +222,17 @@ __PACKAGE__->table("PurchaseOrder");
 
 __PACKAGE__->add_columns(
   "txnid",
-  { data_type => -8, is_nullable => 0, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 0, size => [36, 0] },
   "timecreated",
   { data_type => "timestamp", is_nullable => 1, size => [23, 3] },
   "timemodified",
   { data_type => "timestamp", is_nullable => 1, size => [23, 3] },
   "associate",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "canceldate",
   { data_type => "date", is_nullable => 1, size => [10, 0] },
   "companyname",
-  { data_type => -8, is_nullable => 1, size => [40, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [40, 0] },
   "discount",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "discountpercent",
@@ -243,13 +240,13 @@ __PACKAGE__->add_columns(
   "fee",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "instructions",
-  { data_type => -8, is_nullable => 1, size => [2000, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [2000, 0] },
   "itemscount",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "purchaseordernumber",
-  { data_type => -8, is_nullable => 1, size => [20, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [20, 0] },
   "purchaseorderstatusdesc",
-  { data_type => -8, is_nullable => 1, size => [200, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [200, 0] },
   "qtydue",
   { data_type => "decimal", is_nullable => 1, size => [13, 5] },
   "qtyordered",
@@ -261,13 +258,13 @@ __PACKAGE__->add_columns(
   "startshipdate",
   { data_type => "date", is_nullable => 1, size => [10, 0] },
   "storeexchangestatus",
-  { data_type => -8, is_nullable => 1, size => [12, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [12, 0] },
   "storenumber",
   { data_type => "integer", is_nullable => 1, size => [10, 0] },
   "subtotal",
   { data_type => "decimal", is_nullable => 1, size => [14, 5] },
   "terms",
-  { data_type => -8, is_nullable => 1, size => [200, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [200, 0] },
   "termsdiscount",
   { data_type => "decimal", is_nullable => 1, size => [11, 2] },
   "termsdiscountdays",
@@ -281,21 +278,16 @@ __PACKAGE__->add_columns(
   "unfilledpercent",
   { data_type => "decimal", is_nullable => 1, size => [11, 2] },
   "vendorcode",
-  { data_type => -8, is_nullable => 1, size => [3, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [3, 0] },
   "vendorlistid",
-  { data_type => -8, is_nullable => 0, size => [36, 0] },
+  { data_type => "varchar", is_nullable => 0, size => [36, 0] },
   "fqsavetocache",
   { data_type => "bit", is_nullable => 1, size => [1, 0] },
   "customfieldother1",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
   "customfieldother2",
-  { data_type => -8, is_nullable => 1, size => [30, 0] },
+  { data_type => "varchar", is_nullable => 1, size => [30, 0] },
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07040 @ 2014-05-29 21:36:12
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:P/E+N+S48jfdLu9jtjqOZA
-
-
-# You can replace this text with custom code or comments, and it will be preserved on regeneration
 1;
