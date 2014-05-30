@@ -5,3 +5,9 @@ This is a DBIx::Class schema for the quickbooks pos database.  Use at your own r
 this is more of an test project than anything that shouild be considered for production.
 
 This schema is based on quickbooks pos v 8.0
+
+# Usage:
+At this point I am supporting using DBI::Proxy connection to ODBC using the QODBC driver.
+The speed of this will mostl likely be very slow and it's intent is more for data syncing
+inventory, customer and sales orders data.
+
