@@ -881,5 +881,17 @@ __PACKAGE__->add_columns(
   { data_type => "varchar", is_nullable => 1, size => [100, 0] },
 );
 
+=head1 PRIMARY KEY
+
+=over 4
+
+=item * L</id>
+
+=back
+
+=cut
+
+__PACKAGE__->set_primary_key("id");
+
 
 1;

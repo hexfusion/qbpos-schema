@@ -178,4 +178,17 @@ __PACKAGE__->add_columns(
 );
 
 
+=head1 PRIMARY KEY
+
+=over 4
+
+=item * L</listid>
+
+=back
+
+=cut
+
+__PACKAGE__->set_primary_key("listid");
+
+
 1;

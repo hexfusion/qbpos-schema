@@ -398,4 +398,16 @@ __PACKAGE__->add_columns(
 );
 
 
+=head1 PRIMARY KEY
+
+=over 4
+
+=item * L</fqprimarykey>
+
+=back
+
+=cut
+
+__PACKAGE__->set_primary_key("fqprimarykey");
+
 1;

@@ -193,5 +193,16 @@ __PACKAGE__->add_columns(
   { data_type => "bit", is_nullable => 1, size => [1, 0] },
 );
 
+=head1 PRIMARY KEY
+
+=over 4
+
+=item * L</txnid>
+
+=back
+
+=cut
+
+__PACKAGE__->set_primary_key("txnid");
 
 1;

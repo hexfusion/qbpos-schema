@@ -324,10 +324,17 @@ __PACKAGE__->add_columns(
   { data_type => -8, is_nullable => 1, size => [30, 0] },
 );
 
+=head1 PRIMARY KEY
 
-# Created by DBIx::Class::Schema::Loader v0.07040 @ 2014-05-29 21:36:10
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:2/JdCbypw8YzcTMsU0GaZw
+=over 4
+
+=item * L</listid>
+
+=back
+
+=cut
+
+__PACKAGE__->set_primary_key("listid");
 
 
-# You can replace this text with custom code or comments, and it will be preserved on regeneration
 1;
